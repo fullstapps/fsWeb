@@ -15,6 +15,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./contact/contact.module").then((m) => m.ContactModule),
   },
+  {
+    path: "webcomponents",
+    loadChildren: () =>
+      import("./workshop/workshop.module").then((m) => m.WorkshopModule),
+  },
 ];
 
 @NgModule({
